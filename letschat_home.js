@@ -39,3 +39,8 @@ var firebaseConfig = {
  localStorage.setItem("room_name", name);
  window.location="letschat_page.html";
  }
+ function logout(){
+    localStorage.removeItem("user_name");
+    localStorage.removeItem("room_name");
+    window.location="kwitter_index.html";
+}
